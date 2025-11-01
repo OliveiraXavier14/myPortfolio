@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2c2c2c;
+  font-family: "Poppins", sans-serif;
+}
+
+main{
+  display: flex;
+  min-height: 90vh;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 2rem 0;
+}
+
+.menu {
+  justify-content: center;
+  letter-spacing: 2px;
+  background-color: #2c2c2c;
+  z-index: 100;
+}
+
+.buttonMenu {
+  border: none;
+}
+
+.buttonMenu:focus, 
+.buttonMenu:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+.link {
+  color: #f5f5f5;
+  border: none;
+  display: inline-block;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  background-color: #9a9a9a;
+  height: 2px;
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s;
+}
+
+.link:hover {
+  color: #9a9a9a;
+}
+
+.link:hover::after {
+  transform-origin: right;
+  transform: scaleX(1);
+}
+
+#whatsapp{
+  color: #25d366;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  font-size: 3rem;
+  display: flex;
+  position: fixed;
+  right: 3%;
+  bottom: 2%;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse{
+  0%{
+    transform: scale(1);
+  }
+
+  50%{
+    transform: scale(1.15);
+  }
+
+  100%{
+    transform: scale(1);
+  }
+}
+
+#whatsapp:hover{
+  color: #1fb358;
+  transition: ease 0.3s;
+}
+
+.container {
+  letter-spacing: 2px;
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+}
+
+#apresentacao{
+  display: flex;
+  flex-direction: row;
+  margin: 7.5%;
+  gap: 100px;
+  
+}
+
+#introImg {
+  display: flex;
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  box-shadow: 0.5px 0.5px 12px -1px #fff;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.separador{
+  width: 75%;
+  align-self: center;
+  justify-self: center;
+}
+
+.redesSociais{
+  align-self: center;
+  justify-self: center;
+}
+
+.iconRede:hover{
+  color: #9a9a9a;
+}
+
+.iconRede{
+  color: #f5f5f5;
+  font-size: 1.7rem;
+}
+
+.destaque{
+  color:#7b43eb;
+}
+
+#boasVindas {
+  color: #9a9a9a;
+}
+
+#linkAboutMe {
+  border: 1px solid black;
+  border-radius: 10px;
+  color: #2c2c2c;
+  background-color: #f5f5f5;
+  padding: 5px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 150px;
+}
+
+#linkAboutMe:hover {
+  background-color: #9a9a9a;
+  color: #f5f5f5;
+  transition: 0.3s ease;
+}
+
+#linkMenuAboutMe{
+  cursor: pointer;
+}
+
+/*Separador About Me*/
+.title{
+  margin: 0.5rem 0.5rem 2.5rem 0.5rem;;
+}
+
+.textoAboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 5%;
+}
+
+#info{
+  margin-bottom: 2.5rem;
+}
+
+#formacao{
+  display: grid;
+}
+
+#listaFormacoes, #listaProjetos{
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  justify-self: center;
+  margin-bottom: 2.5rem;
+}
+
+.cardFormacao{
+  padding: 1rem 0.5rem;
+  height: 27rem;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  box-shadow: 0.5px 0.5px 12px -1px #fff;
+}
+
+#cardUdemy{
+  padding: 2.3rem 0.5rem;;
+}
+
+.card-title{
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.dadosFormacao{
+  margin-top: 1rem; 
+  font-size: 0.9rem;
+}
+
+.dadosFormacao li{
+  background: transparent;
+  color: #fff;
+}
+
+.cardLinks{
+  padding-bottom: 0rem;
+  text-decoration: none;
+}
+
+.cardLinks a{
+  text-decoration: none;
+  color: #a1a1a1;
+}
+
+.link:hover{
+  cursor: pointer;
+  color: #fff;
+}
+
+/*Separador Projetos*/
+.projetos{
+  text-align: center;
+}
+
+.cardProjeto{
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  box-shadow: 0.5px 0.5px 12px -1px #fff;
+}
+
+.cardProjeto .card-text{
+ font-size: 0.8rem;
+ margin: 1rem 0.5rem;
+}
+
+.linguagensUsadas{
+  width: 13rem;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.linguagensUsadas button{
+  margin-top: 0.2rem;
+  height: 2rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/*
+#status {
+  align-self: center;
+  margin: 2rem;
+  color: #fff;
+  animation: pulse 2.5s infinite ease-in-out;
+  position: absolute ;
+  top: 5vh;
+}
+
+.indicator {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  outline: 4px solid #00ff8833;
+  border-radius: 500px;
+  background-color: #00ff88;
+  margin-right: 10px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+*/
+
+#apresentacao{
+  font-weight:300;
+}
+
+#competencias{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#cardLinguagens{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  justify-self: center;
+  max-width: 500px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.imgLinguagens{
+  margin-top: 1rem;
+}
+
+#iconPHP, #iconSQL{
+  margin-right: 0.5rem;
+}
+
+.buttonContacto{
+  background-color: transparent;
+  text-decoration: underline;
+  border: none;
+  color: #f5f5f5;
+}
+
+#tituloContacto{
+  text-align: center;
+  margin: 35px 0 20px 0 !important;
+}
+
+.formContacto{
+  color: #d8d8d8;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0.5rem;gap: 0.3rem;
+}
+
+.formContacto input, 
+.formContacto textarea{
+  display: block;
+  border: none;
+}
+
+.formContacto label{
+  display: flex;
+}
+
+.mensagem{
+  margin: 1rem 0rem;
+}
+
+.msgErro{
+  text-align: center;
+}
+
+#separadorRodape{
+  color: #d8d8d8;
+  width: 70%;
+  display: flex;
+  display: flex;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+footer{
+  display: flex;
+  color: #d8d8d8;
+  justify-content: center;
+  padding-bottom: 0.8rem;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #apresentacao{
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .boxImg{
+    display: flex;
+    justify-content: center;
+  }
+
+  #listaFormacoes{
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 700px){
+  .linguagens{
+    flex-direction: column;
+  }
+}
+
+
