@@ -254,6 +254,7 @@ main{
   color: #fff;
   border: 1px solid #fff;
   box-shadow: 0.5px 0.5px 12px -1px #fff;
+  justify-self: center;
 }
 
 .cardProjeto .card-text{
