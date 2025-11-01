@@ -126,6 +126,7 @@ main{
   width: 75%;
   align-self: center;
   justify-self: center;
+  align-self: center;
 }
 
 .redesSociais{
@@ -255,6 +256,7 @@ main{
   border: 1px solid #fff;
   box-shadow: 0.5px 0.5px 12px -1px #fff;
   justify-self: center;
+  align-self: center;
 }
 
 .cardProjeto .card-text{
