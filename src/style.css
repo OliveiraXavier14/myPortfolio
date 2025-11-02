@@ -125,6 +125,7 @@ main{
 .separador{
   width: 75%;
   justify-self: center;
+  align-self: center;
 }
 
 .redesSociais{
@@ -410,6 +411,7 @@ footer{
     flex-direction: column;
   }
 }
+
 
 
 
