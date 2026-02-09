@@ -37,9 +37,10 @@ main{
 
 .hamburger svg {
   /* The size of the SVG defines the overall size */
-  height: 3em;
+  height: 2em;
   /* Define the transition for transforming the SVG */
   transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: -0.9rem;
 }
 
 .line {
@@ -456,10 +457,6 @@ footer{
     padding-left: 0.9rem;
     background-color: #2c2c2c;
   }
-
-  .hamburguer svg{
-    margin-left: -0.9rem;
-  }
 }
 
 @media (max-width: 700px){
@@ -467,6 +464,7 @@ footer{
     flex-direction: column;
   }
 }
+
 
 
 
