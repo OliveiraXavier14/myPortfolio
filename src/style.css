@@ -40,7 +40,7 @@ main{
   height: 2em;
   /* Define the transition for transforming the SVG */
   transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: -0.9rem;
+  margin-left: -0.5rem;
 }
 
 .line {
@@ -464,6 +464,7 @@ footer{
     flex-direction: column;
   }
 }
+
 
 
 
